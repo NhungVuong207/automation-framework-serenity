@@ -78,4 +78,19 @@ public class WomenPO extends PageObject {
         basePage.clickElement(WomenUI.AGREE_BTN);
         basePage.clickElement(WomenUI.PROCESS_TO_CHECKOUT_FORD_BTN);
     }
+
+    public void clickPayByBankWire(){
+        basePage.clickElement(WomenUI.PAYMENT_BY_BANKWIRE);
+//        basePage.sleepInSecond(2);
+    }
+
+    public void clickConfirmOrder(){
+        basePage.clickElement(WomenUI.CONFIRM_ORDER);
+        basePage.sleepInSecond(2);
+    }
+
+    public boolean verifyThatProductIsOrdered(String message){
+       return basePage.verifyElementText(WomenUI.SUCCESS_NOTIFY_CONFIRM_ORDER,message);
+//        basePage.sleepInSecond(2);
+    }
 }

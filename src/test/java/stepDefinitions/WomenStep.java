@@ -69,4 +69,16 @@ public class WomenStep {
         womenPO.clickProceedToCheckout();
 
     }
+
+    @And("Choose payment by bank wire")
+    public void choosePaymentByBankWire() {
+        womenPO.clickPayByBankWire();
+    }
+
+
+    @And("Make sure that Product is ordered with notify {string}")
+    public void verifyThatProductIsOrderWithNotify(String message) {
+        womenPO.clickConfirmOrder();
+        Assert.assertTrue(womenPO.verifyThatProductIsOrdered(message));
+    }
 }

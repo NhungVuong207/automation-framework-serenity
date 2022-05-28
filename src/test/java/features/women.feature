@@ -25,6 +25,8 @@ Feature: Search Product Check
     And Select color
     And Click Add to Cart
     Then Click Proceed to checkout
+    And Choose payment by bank wire
+    And Make sure that Product is ordered with notify "Your order on My Store is complete."
 
 
     Examples:

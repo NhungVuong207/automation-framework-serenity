@@ -15,4 +15,7 @@ public class WomenUI {
     public static final String PROCESS_TO_CHECKOUT_THIRD_BTN = "//span[text()='Proceed to checkout']";
     public static final String PROCESS_TO_CHECKOUT_FORD_BTN = "//button[@name='processCarrier']";
     public static final String AGREE_BTN = "//input[@id='cgv']";
+    public static final String PAYMENT_BY_BANKWIRE = "//a[contains(text(),'Pay by bank')]";
+    public static final String CONFIRM_ORDER = "//span[contains(text(),'I confirm my order')]";
+    public static final String SUCCESS_NOTIFY_CONFIRM_ORDER = "//strong[contains(text(),'Your order on My Store is complete.')]";
 }

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src/test/java/features/women.feature",
         glue = "stepDefinitions",
-        tags = "@1"
+        tags = "@2"
 
 )
 
