@@ -18,4 +18,6 @@ public class WomenUI {
     public static final String PAYMENT_BY_BANKWIRE = "//a[contains(text(),'Pay by bank')]";
     public static final String CONFIRM_ORDER = "//span[contains(text(),'I confirm my order')]";
     public static final String SUCCESS_NOTIFY_CONFIRM_ORDER = "//strong[contains(text(),'Your order on My Store is complete.')]";
+    public static final String ADD_TO_WISHLIST_BTN = "//a[@class='addToWishlist wishlistProd_1']";
+    public static final String YOU_MUST_BE_LOGGED_NOTIFY = "//p[@class='fancybox-error']";
 }

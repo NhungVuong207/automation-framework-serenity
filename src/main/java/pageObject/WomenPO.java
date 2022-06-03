@@ -93,4 +93,19 @@ public class WomenPO extends PageObject {
        return basePage.verifyElementText(WomenUI.SUCCESS_NOTIFY_CONFIRM_ORDER,message);
 //        basePage.sleepInSecond(2);
     }
+
+    public void clickAddToWishlist() {
+        basePage.clickElement(WomenUI.ADD_TO_WISHLIST_BTN);
+        basePage.sleepInSecond(2);
+    }
+
+    public boolean verifyErrorMessageDisplayed(String message){
+        return basePage.verifyElementText(WomenUI.YOU_MUST_BE_LOGGED_NOTIFY,message);
+//        basePage.sleepInSecond(2);
+    }
+    public void clickProceedToCheckoutBeforeContinuePayment() {
+        basePage.waitForElementClickable(WomenUI.PROCESS_TO_CHECKOUT_BTN);
+        basePage.clickElement(WomenUI.PROCESS_TO_CHECKOUT_BTN);
+    }
+
 }

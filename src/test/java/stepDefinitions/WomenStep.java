@@ -81,4 +81,24 @@ public class WomenStep {
         womenPO.clickConfirmOrder();
         Assert.assertTrue(womenPO.verifyThatProductIsOrdered(message));
     }
+
+    @And("Click Add to Wishlist")
+    public void clickAddToWishlist() {
+        womenPO.clickAddToWishlist();
+    }
+
+    @Then("Error message displayed with {string}")
+    public void verifyErrorMessageDisplayedWith(String message) {
+        Assert.assertFalse(womenPO.verifyErrorMessageDisplayed(message));
+    }
+
+
+    @Then("Click Proceed to checkout before continue payment")
+    public void clickProceedToCheckoutBeforeContinuePayment() {
+        womenPO.clickProceedToCheckoutBeforeContinuePayment();
+    }
+
+    @And("Change the quantity to {int}")
+    public void changeTheQuantityTo() {
+    }
 }

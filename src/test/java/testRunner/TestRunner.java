@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        features = "src/test/java/features/women.feature",
+        features = "src/test/java/features/registerUser.feature",
         glue = "stepDefinitions",
-        tags = "@2"
+        tags = "@5"
 
 )
 
